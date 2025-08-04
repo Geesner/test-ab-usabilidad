@@ -71,7 +71,7 @@ nav a:hover {
     background-position: center;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    background-color: transparent; /* Ahora el fondo de la tarjeta es transparente */
+    background-color: transparent;
 }
 
 .product-card h2,
@@ -181,7 +181,7 @@ nav a:hover {
 
 /* ESTILOS CORREGIDOS PARA EL FONDO DEL CONTENIDO PRINCIPAL DE LA VERSIÓN B */
 .version-b-main {
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../fondo.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('fondo.jpg');
     background-repeat: repeat;
     background-size: cover;
     background-attachment: fixed;
