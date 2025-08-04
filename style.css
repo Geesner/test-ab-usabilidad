@@ -1,0 +1,197 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos del encabezado y la navegación (compartidos por ambos prototipos) */
+header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+/* MODIFICACIÓN: Contenedor para mostrar productos en 2 columnas */
+.page-content {
+    margin-top: 120px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilos para el cuadro de producto (compartido por ambos prototipos) */
+.product-card {
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: transparent; /* Ahora el fondo de la tarjeta es transparente */
+}
+
+.product-card h2,
+.product-card .price {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.5em;
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+}
+
+/* Estilos del botón de la VERSIÓN A (Simple) */
+.version-a {
+    background-color: #808080;
+    color: #fff;
+    border-radius: 0;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilos del botón de la VERSIÓN B (Mejorada) */
+.version-b {
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.version-b::before {
+    content: '🛒';
+    margin-right: 8px;
+}
+
+/* Estilos para la navegación de la Versión B */
+.version-b-nav {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.version-b-nav a {
+    position: relative;
+    padding-left: 25px;
+}
+
+.version-b-nav a::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.version-b-nav a[href*="inicio"]::before {
+    content: '🏠';
+}
+
+.version-b-nav a[href*="productos"]::before {
+    content: '📦';
+}
+
+.version-b-nav a[href*="contactos"]::before {
+    content: '📧';
+}
+
+.contact-info-b::before {
+    content: '📧 ';
+}
+
+.contact-info-b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para el título y encabezado de la Versión B */
+.version-b-header {
+    background-color: #B642F4;
+    padding: 1.5em 0;
+}
+
+.version-b-header h1 {
+    font-size: 2.5em;
+    font-family: 'Arial Black', sans-serif;
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+}
+
+/* ESTILOS CORREGIDOS PARA EL FONDO DEL CONTENIDO PRINCIPAL DE LA VERSIÓN B */
+.version-b-main {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../fondo.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    padding: 60px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Estilos para el título y la descripción dentro del contenido principal */
+.version-b-main h2, .version-b-main p {
+    text-shadow: none;
+}
