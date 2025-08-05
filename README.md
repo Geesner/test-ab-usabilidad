@@ -1,7 +1,5 @@
-Título del proyecto
 # Prueba de Usabilidad A/B - Tienda de Ropa
 
-Descripción
 Este repositorio contiene los archivos de dos prototipos (Versión A y Versión B) de una tienda de ropa en línea. El objetivo del proyecto es realizar una prueba de usabilidad para determinar qué diseño ofrece la mejor experiencia de usuario.
 
 Enlaces a los prototipos en vivo
